@@ -1,0 +1,189 @@
+<!DOCTYPE html>  
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Links</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+body {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding-top: 60px;
+}
+
+/* Default Background for PC */
+@media (min-width: 601px) {
+    body {
+        background-image: url("DiveToBlueOfficial PC.jpg"); /* Background for PC */
+    }
+}
+
+/* Background for Mobile */
+@media (max-width: 600px) {
+    body {
+        background-image: url("DiveToBlueOfficialMobile.jpg"); /* Background for Mobile */
+        background-size: contain; /* Prevents zoom-in effect */
+        background-attachment: scroll; /* Improves performance on mobile */
+    }
+}
+
+        /* Navigation Bar */
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: rgba(10, 10, 10, 0.8);
+            padding: 10px 0;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+            z-index: 1000;
+        }
+
+        .nav-button {
+            color: white;
+            font-size: 16px;
+            text-decoration: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background 0.3s, transform 0.2s;
+            font-weight: bold;
+        }
+
+        .nav-button:hover {
+            background: rgba(255, 255, 255, 0.2);
+            transform: scale(1.1);
+        }
+
+@media (max-width: 600px) {
+    .navbar {
+        flex-wrap: wrap; /* Allows wrapping if needed */
+        padding: 10px;
+        gap: 10px; /* Adjusts spacing */
+    }
+    .nav-button {
+        font-size: 14px;
+        padding: 8px 12px;
+    }
+}
+
+        .container {
+            background-color: rgba(10, 10, 10, 0.7);
+            padding: 20px;
+            border-radius: 15px;
+            width: 90%;
+            max-width: 350px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            margin-top: 20px;
+        }
+
+        .profile-img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+
+        .button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            padding: 12px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            font-size: 16px;
+            text-decoration: none;
+            text-align: center;
+            cursor: pointer;
+            transition: transform 0.2s, opacity 0.2s;
+            font-weight: bold;
+        }
+
+        .button img {
+            height: 20px;
+            margin-right: 10px;
+        }
+
+        .button:hover {
+            transform: scale(1.05);
+            opacity: 0.9;
+        }
+
+        /* Social Button Colors */
+        .twitch { background-color: #9146FF; }
+        .youtube { background-color: #FF0000; }
+        .discord { background-color: #5865F2; }
+        .twitter { background-color: #1DA1F2; }
+
+        /* Responsive Fix for Small Screens */
+        @media (max-width: 400px) {
+            .button {
+                font-size: 14px;
+                padding: 10px;
+            }
+            .button img {
+                height: 18px;
+                margin-right: 8px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <a href="home.html" class="nav-button">Home</a>
+        <a href="about.html" class="nav-button">About</a>
+        <a href="gallery.html" class="nav-button">Gallery</a> 
+        <a href="contacts.html" class="nav-button">Contacts</a>
+    </div>
+
+    <div class="container">
+        <img src="screendShot_2022-02-08_19-26-53.png" alt="Profile" class="profile-img"> 
+
+        <a href="https://www.youtube.com/@KurokiRen" target="_blank" class="button youtube">
+            <img src="youtube-svgrepo-com.svg" alt="YouTube Icon">
+            YouTube
+        </a>
+
+        <a href="https://discordapp.com/users/kuroki02" target="_blank" class="button discord">
+            <img src="discord-alt-svgrepo-com.svg" alt="Discord Icon">
+            Discord
+        </a>
+
+        <a href="https://x.com/KurokiRen2" target="_blank" class="button twitter">
+            <img src="X_logo_2023_original.svg" alt="Twitter Icon">
+            Twitter
+        </a>
+
+        <a href="https://www.twitch.tv/KurokiRen" target="_blank" class="button twitch">
+            <img src="twitch-svgrepo-com.svg" alt="Twitch Icon">
+            Twitch
+        </a>
+    </div>
+
+</body>
+</html>
